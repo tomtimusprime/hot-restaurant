@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Restaurant - Tables</title>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <div class="jumbotron text-center">
+              <h1><span><i class="fas fa-fire-alt"></i></span>Hot Restaurant</h1>
+              <hr />
+              <h3>Make a reservation before their all gone!</h3>
+              <a href="./tables.html"
+                ><button class="btn btn-danger btn-lg">
+                  <span class="fa fa-home"></span> Home
+                </button></a
+              >
+              <a href="./reserve.html"
+                ><button class="btn btn-danger btn-lg second-button">
+                  <span class="fa fa-plus"></span> Make a Reservation
+                </button></a
+              >
+            </div>
+            <!-- Table List -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card my-2">
+                        <div class="card-header">
+                            <h4>Current Reservations</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul id="tableList" class="list-group"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Waiting List -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card my-2">
+                        <div class="card-header">
+                            <h4>Waiting List</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul id="waitingList" class="list-group">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="footer">
+                <div class="container">
+                  <a href="#" id="clear-btn">Clear Tables</a>
+                  <a href="/api/tables">API Table Link</a>
+                  <a href="/api/waitList">API Wait List</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+      <script src="getReservations.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.second-button {
+    background-color: #1c5aaa;
+    border-color: #1c5aaa;
+}
+
+.second-button:hover, .second-button:focus {
+background-color: #257beb;
+}
+
+.submit-btn {
+    color: white;
+}
